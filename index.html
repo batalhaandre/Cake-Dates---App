@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cake Dates - pastelaria artesanal com bolos, muffins e bolachas para momentos especiais."
+    />
+    <title>Cake Dates</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="app-header" aria-label="Cabeçalho da aplicação">
+      <div class="logo-slot" role="img" aria-label="Espaço reservado para o logótipo Cake Dates">
+        <span>Inserir Logótipo</span>
+      </div>
+      <p class="brand-slogan">MORE THAN CAKE</p>
+    </header>
+
+    <main id="main-content" class="app-main">
+      <section id="quem-somos" class="tab-page active" aria-labelledby="titulo-quem-somos">
+        <h1 id="titulo-quem-somos">Quem Somos</h1>
+        <p>
+          Na Cake Dates, acreditamos que cada momento merece um sabor especial. Somos uma equipa
+          familiar, próxima e apaixonada por criar doces que juntam pessoas à mesa.
+        </p>
+        <p>
+          Trabalhamos com carinho em cada receita para que te sintas em casa, seja numa celebração
+          grande ou num lanche simples de fim de tarde. O nosso compromisso é ouvir-te e criar com
+          atenção ao detalhe.
+        </p>
+        <p>
+          Queremos que cada encomenda conte uma história: a tua. Por isso, adaptamos ideias,
+          preferências e necessidades alimentares para que ninguém fique de fora.
+        </p>
+        <aside class="slogan-block" aria-label="Slogan institucional">MORE THAN CAKE</aside>
+      </section>
+
+      <section id="o-que-fazemos" class="tab-page" aria-labelledby="titulo-o-que-fazemos">
+        <h2 id="titulo-o-que-fazemos">O Que Fazemos</h2>
+        <div class="cards-grid info-cards">
+          <article class="info-card">
+            <h3>Pastelaria inclusiva</h3>
+            <p>
+              Criamos propostas pensadas para diferentes gostos e estilos de vida, com uma abordagem
+              acolhedora e personalizada.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Ingredientes naturais</h3>
+            <p>
+              Privilegiamos ingredientes de qualidade e sabor autêntico, respeitando a simplicidade
+              de uma boa receita.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Opções sem glúten, vegan e sem açúcar refinado</h3>
+            <p>
+              Desenvolvemos alternativas conscientes para que todos possam desfrutar dos nossos doces
+              com confiança.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="tab-page" aria-labelledby="titulo-portfolio">
+        <h2 id="titulo-portfolio">Portfólio</h2>
+
+        <section class="portfolio-section" aria-labelledby="portfolio-bolos">
+          <h3 id="portfolio-bolos">Bolos</h3>
+          <div class="portfolio-grid">
+            <img src="assets/images/bolo-1.svg" alt="Bolo decorado em tons pastel" loading="lazy" />
+            <img src="assets/images/bolo-2.svg" alt="Fatia de bolo artesanal" loading="lazy" />
+            <img src="assets/images/bolo-3.svg" alt="Bolo de aniversário personalizado" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="portfolio-section" aria-labelledby="portfolio-muffins">
+          <h3 id="portfolio-muffins">Muffins</h3>
+          <div class="portfolio-grid">
+            <img src="assets/images/muffin-1.svg" alt="Muffins com cobertura cremosa" loading="lazy" />
+            <img src="assets/images/muffin-2.svg" alt="Tabuleiro de muffins artesanais" loading="lazy" />
+            <img src="assets/images/muffin-3.svg" alt="Muffins de chocolate" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="portfolio-section" aria-labelledby="portfolio-bolachas">
+          <h3 id="portfolio-bolachas">Bolachas</h3>
+          <div class="portfolio-grid">
+            <img src="assets/images/bolacha-1.svg" alt="Bolachas decoradas" loading="lazy" />
+            <img src="assets/images/bolacha-2.svg" alt="Bolachas artesanais em embalagem" loading="lazy" />
+            <img src="assets/images/bolacha-3.svg" alt="Conjunto de bolachas variadas" loading="lazy" />
+          </div>
+        </section>
+      </section>
+
+      <section id="encomendas" class="tab-page" aria-labelledby="titulo-encomendas">
+        <h2 id="titulo-encomendas">Encomendas</h2>
+        <p class="section-intro">Escolhe uma categoria para iniciares a tua encomenda.</p>
+
+        <div class="cards-grid category-grid" role="list" aria-label="Categorias de encomenda">
+          <article class="category-card" data-category="Bolos" role="button" tabindex="0">
+            <img src="assets/images/bolo-1.svg" alt="Categoria de bolos" loading="lazy" />
+            <h3>Bolos</h3>
+            <p>Bolos personalizados para aniversários, eventos e momentos especiais.</p>
+          </article>
+
+          <article class="category-card" data-category="Muffins" role="button" tabindex="0">
+            <img src="assets/images/muffin-1.svg" alt="Categoria de muffins" loading="lazy" />
+            <h3>Muffins</h3>
+            <p>Muffins leves e saborosos em vários tamanhos e combinações.</p>
+          </article>
+
+          <article class="category-card" data-category="Bolachas" role="button" tabindex="0">
+            <img src="assets/images/bolacha-1.svg" alt="Categoria de bolachas" loading="lazy" />
+            <h3>Bolachas</h3>
+            <p>Bolachas artesanais ideais para ofertas, mesas de festa e lembranças.</p>
+          </article>
+        </div>
+
+        <p id="chosen-category" class="chosen-category" aria-live="polite">
+          Categoria escolhida: Nenhuma
+        </p>
+
+        <button id="order-button" class="primary-button" type="button">Fazer Encomenda</button>
+
+        <p class="order-note">
+          Depois de submeter o formulário, entraremos em contacto para confirmar a tua encomenda.
+        </p>
+      </section>
+
+      <section id="contactos" class="tab-page" aria-labelledby="titulo-contactos">
+        <h2 id="titulo-contactos">Contactos</h2>
+        <div class="contact-card">
+          <p><strong>Email:</strong> ola@cakedates.pt (editar depois)</p>
+          <p><strong>Instagram:</strong> @cakedates.pt (editar depois)</p>
+          <a class="secondary-button" href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+            >Como chegar</a
+          >
+        </div>
+        <div class="delivery-block">
+          <h3>Entregas / Zona de atuação</h3>
+          <p>
+            Fazemos entregas por marcação na tua zona (informação detalhada a confirmar). Também
+            podes levantar a encomenda em ponto a combinar.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Menu inferior">
+      <button class="tab-link active" data-target="quem-somos">Quem Somos</button>
+      <button class="tab-link" data-target="o-que-fazemos">O Que Fazemos</button>
+      <button class="tab-link" data-target="portfolio">Portfólio</button>
+      <button class="tab-link" data-target="encomendas">Encomendas</button>
+      <button class="tab-link" data-target="contactos">Contactos</button>
+    </nav>
+
+    <a
+      id="whatsapp-button"
+      class="whatsapp-float"
+      href="https://wa.me/351929299029"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+      >WhatsApp</a
+    >
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
